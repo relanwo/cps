@@ -1,0 +1,49 @@
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: $deco-element-border;
+  margin: 0 0 1em 0;
+  display: block;
+}
+@media (min-width: 768px) {
+  .footer-divider {
+    margin: 0 0 2em 0;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  margin: 0 0 1.3em 0;
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1em;
+    color: $text-color-2;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer__text {
+    width: 30%;
+    &--text-align--left {
+      text-align: left;
+    }
+    &--text-align--right {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.modal {
+  min-width: 320px;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  &__cross {
+    &::before {
+      content: url(../img/icons/cross.png);
+    }
+  }
+  &__submit {
+    font-weight: 700;
+    font-size: 12px;
+    text-align: right;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: $bg-color-2;
+    min-width: 136px;
+    height: 32px;
+    background: $bg-color-3;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__icon {
+    &::before {
+      content: url(../img/icons/price-arrow--white.png);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .modal {
+    max-width: 440px;
+    height: 100%;
+    box-shadow: -2px 0px 4px $shadow-2, 16px 0px 52px $shadow-1;
+  }
+}
+
+.modal-call,
+.modal-feedback {
+  display: none;
+}
+.modal-call--active,
+.modal-feedback--active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 16px;
+  z-index: 2;
+}
+
+
+.form__header {
+  &::before {
+    position: absolute;
+    top: 81px;
+    left: 0px;
+    border-radius: 0 3px 3px 0;
+    content: "";
+    width: 4px;
+    height: 40px;
+    background-color: $deco-element-1;
+  }
+}
+
+.form-agreement {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color-2;
+  &__link {
+    color: $bg-color-3;
+  }
+}
+
+.form-input {
+  background: $bg-color-2;
+  border: 1px solid $deco-element-divider;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  margin: 0 0 1em 0;
+  resize: none;
+}
+

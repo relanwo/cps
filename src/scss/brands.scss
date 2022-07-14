@@ -1,0 +1,130 @@
+.brands {
+  margin: 0 0 24px 0;
+}
+@media (min-width: 768px) {
+  .brands {
+    margin: 0 0 32px 0;
+  }
+}
+.brands-header {
+  &__background {
+    background: linear-gradient(270deg, $bg-color-1 0%, $bg-color-2 98.61%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    height: 56px;
+    border-top: 1px solid $deco-element-border;
+  }
+  font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	color: $text-color-2;
+	margin: 0;
+	padding: 20px 0;
+  position: relative;
+  top: -56px;
+}
+
+.swiper-container {
+  margin: -56px 0 0 0;
+}
+
+.brands-slider {
+	position: relative;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	box-sizing: border-box;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+  &__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $bg-color-2;
+    border: 1px solid $deco-element-divider;
+    border-radius: 6px;
+    padding: 0 15px;
+    min-width: 240px;
+    height: 72px;
+    margin: 0 1em 0 0;
+    padding: 16px;
+    flex: 1;
+    cursor: pointer;
+  }
+  &__img {
+    width: min-content;
+    height: min-content;
+  }
+  &__navigation-element {
+    &::after {
+      content: url(../img/icons/go.png);
+      height: 40px;
+      width: 40px;
+    }
+  }
+  &__pagination {
+    position: relative;
+  }
+  &__dropdown {
+    display: none;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: -0.2px;
+    color: $text-color-1;
+    &::before {
+      content: url(../img/icons/expand.png);
+      position: relative;
+      top: -2px;
+    }
+    &--active {
+      &::before {
+        content: url(../img/icons/expand.png);
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+	.brands-slider {
+		overflow: inherit;
+		flex-wrap: wrap;
+    &__card {
+      flex: 30%;
+      margin: 0 0 1em 0;
+      max-width: 30%;
+      min-width: 224px;
+      width: 100%;
+      &--hidden768 {
+        display: none;
+      }
+    }
+    &__dropdown {
+      display: flex;
+    }
+	}
+	.swiper-pagination {
+		display: none;
+	}
+}
+@media (min-width: 1120px) {
+	.brands-slider {
+		overflow: inherit;
+		flex-wrap: wrap;
+    &__card {
+      max-width: 23%;
+      margin: 0 0 1em 0;
+      &--hidden768 {
+        display: flex;
+      }
+      &--hidden1120 {
+        display: none;
+      }
+    }
+	}
+}

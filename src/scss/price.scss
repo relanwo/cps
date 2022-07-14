@@ -1,0 +1,235 @@
+.price {
+  margin: 0 0 32px 0;
+}
+
+.price-header {
+  &__background {
+    background: linear-gradient(270deg, $bg-color-1 0%, $bg-color-2 98.61%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    height: 56px;
+    border-top: 1px solid $deco-element-border;
+  }
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	color: $text-color-2;
+	margin: 0;
+	padding: 20px 0;
+  position: relative;
+  top: -56px;
+}
+
+.swiper-container {
+  margin: -56px 0 0 0;
+}
+
+.price-slider {
+	position: relative;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	box-sizing: border-box;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+  &__card {
+    position: relative;
+    justify-content: space-between;
+    background: $bg-color-2;
+    border: 1px solid $deco-element-divider;
+    border-radius: 6px;
+    padding: 0 15px;
+    min-width: 260px;
+    height: 200px;
+    margin: 0 1em 0 0;
+    padding: 16px;
+    flex: 1;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $text-color-1;
+  }
+}
+
+.price-card {
+  &__button {
+    font-weight: 700;
+    font-size: 12px;
+    text-align: right;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: $bg-color-2;
+    width: 132px;
+    height: 32px;
+    background: $bg-color-3;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-end;
+    position: relative;
+    left: 95px;
+    top: -27px;
+  }
+  &__icon {
+    &::before {
+      content: url(../img/icons/price-arrow--white.png);
+    }
+  }
+  &__service {
+    height: 56px;
+    margin-bottom: 1em;
+    &::before {
+      content: 'Ремонтные услуги';
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: $text-color-2;
+      mix-blend-mode: normal;
+      opacity: 0.72;
+      margin-bottom: 4px;
+    }
+  }
+  &__price {
+    margin-bottom: 1em;
+    &::before {
+      content: 'Цена';
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1em;
+      color: $text-color-2;
+      mix-blend-mode: normal;
+      opacity: 0.72;
+      margin-bottom: 4px;
+    }
+  }
+  &__term {
+    &::before {
+      content: 'Срок';
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1em;
+      color: $text-color-2;
+      mix-blend-mode: normal;
+      opacity: 0.72;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .price-card {
+    &__service {
+      width: 48%;
+      &::before {
+        content: '';
+      }
+    }
+    &__price {
+      width: 10%;
+      &::before {
+        content: '';
+      }
+    }
+    &__term {
+      width: 12%;
+      &::before {
+        content: '';
+      }
+    }
+    &__button {
+      &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 32px);
+        background-color: $deco-element-divider;
+        right: 17px;
+        top: 62px;
+      }
+    }
+  }
+
+  .price-slider__card:first-child .price-card__service {
+    &::before {
+      content: 'Ремонтные услуги';
+      position: absolute;
+      bottom: 80px;
+    }
+  }
+  .price-slider__card:first-child .price-card__price {
+    &::before {
+      content: 'Цена';
+      position: absolute;
+      bottom: 80px;
+    }
+  }
+  .price-slider__card:first-child .price-card__term {
+    &::before {
+      content: 'Срок';
+      position: absolute;
+      bottom: 80px;
+    }
+  }
+  .price-slider__card:last-child .price-card__button {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.swiper-pagination {
+	position: relative;
+}
+
+@media (min-width: 768px) {
+	.price-slider {
+		overflow: inherit;
+		flex-wrap: wrap;
+    background-color: $bg-color-2;
+    border-radius: 6px;
+    margin: 60px 0 24px 0;
+    &__card {
+      height: 64px;
+      flex: none;
+      display: flex;
+      border: none;
+      &--hidden768 {
+        display: none;
+      }
+    }
+	}
+  .price-card__button {
+    position: unset;
+  }
+
+	.swiper-pagination {
+		display: none;
+	}
+}
+
+.price-descr__navigation-element {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 42px;
+  letter-spacing: -0.2px;
+  color: $text-color-1;
+  &::after {
+		content: url(../img/icons/price-arrow--pink.png);
+    position: relative;
+    top: 10px;
+	}
+}

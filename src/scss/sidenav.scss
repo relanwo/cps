@@ -1,0 +1,197 @@
+.sidenav-container {
+	min-width: 272px;
+	margin: 0 auto;
+}
+
+.sidenav {
+  display: none;
+  z-index: 2;
+	max-width: 320px;
+	position: fixed;
+  top: 0;
+  left: 0;
+	background-color: $bg-color-2;
+  min-height: 100%;
+  width: 100%;
+  padding: 0 16px;
+	box-shadow: 16px 0px 52px 0px $shadow-1,
+		-2px 0px 4px 0px $shadow-2;
+}
+@media (min-width: 360px) {
+  .sidenav {
+    max-width: 360px;
+  }
+}
+@media (min-width: 768px) {
+  .sidenav {
+    padding: 12px 24px;
+    max-width: 320px;
+  }
+}
+@media (min-width: 1440px) {
+  .sidenav {
+    max-width: 306px;
+    display: flex;
+    z-index: 0;
+    position: relative;
+    box-shadow: unset;
+  }
+}
+
+.sidenav--active {
+  display: flex;
+}
+
+.sidenav-header {
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 45px 0;
+    padding: 0;
+  }
+  &__logo {
+    display: block;
+    transform: translateX(-25px);
+  }
+  &__cross {
+    &::before {
+      content: url(../img/icons/cross.png);
+    }
+  }
+  &__search {
+    &::before {
+      content: url(../img/icons/sidenav/search.png);
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .sidenav-header {
+    &__item {
+      &:first-child {
+        display: none;
+      }
+    }
+    &__logo {
+      transform: translateX(0);
+    }
+    &__search {
+      position: relative;
+      left: -12px;
+    }
+  }
+}
+
+.sidenav-menu {
+  flex-grow: 1;
+  &__ul {
+    padding: 0;
+  }
+  &__li {
+    display: block;
+    margin: 0 0 32px 0;
+    &:active {
+      color: $text-color-2;
+      position: relative;
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $text-color-1;
+    display: block;
+    &:hover {
+      font-size: 1.1em;
+    }
+    &:focus {
+      color: $text-color-2;
+      position: relative;
+      &::before {
+        position: absolute;
+        top: -6px;
+        left: -24px;
+        border-radius: 0 3px 3px 0;
+        content: "";
+        width: 4px;
+        height: 40px;
+        background-color: $deco-element-1;
+        display: block;
+      }
+    }
+  }
+}
+
+.sidenav-lang__link.sidenav-lang__link--checked {
+	color: none;
+	color: $text-color-2;
+}
+
+.sidenav-footer {
+  margin: 0;
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 16px 0;
+    padding: 0;
+    width: 152px;
+  }
+  &__call {
+    &::before {
+      content: url(../img/icons/sidenav/call.png);
+    }
+  }
+  &__chat {
+    &::before {
+      content: url(../img/icons/sidenav/chat.png);
+    }
+  }
+  &__profile {
+    &::before {
+      content: url(../img/icons/sidenav/profile.png);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .sidenav-footer {
+    margin: 240px 0 0 0;
+    margin-bottom: auto;
+  }
+}
+
+.email {
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: -0.2px;
+	color: $text-color-1;
+	margin: 0 0 12px 0;
+}
+
+.phone {
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: -0.6px;
+	color: $text-color-1;
+	margin: 0 26px 40px 0;
+}
+
+.sidenav-lang {
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 32px 0;
+    padding: 0;
+    width: 85px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: $text-color-1;
+    display: block;
+  }
+}

@@ -2,6 +2,9 @@
 	min-width: 272px;
 	margin: 0 auto;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .sidenav {
@@ -50,7 +53,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0 45px 0;
     padding: 0;
   }
   &__logo {
@@ -90,6 +92,7 @@
   flex-grow: 1;
   &__ul {
     padding: 0;
+    margin-bottom: 0;
   }
   &__li {
     display: block;
@@ -156,12 +159,6 @@
     &::before {
       content: url(../img/icons/sidenav/profile.png);
     }
-  }
-}
-@media (min-width: 768px) {
-  .sidenav-footer {
-    margin: 100px 0 0 0;
-    margin-bottom: auto;
   }
 }
 

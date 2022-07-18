@@ -29,13 +29,12 @@
 }
 @media (min-width: 768px) {
   .sidenav {
-    padding: 12px 24px;
     max-width: 320px;
   }
 }
 @media (min-width: 1440px) {
   .sidenav {
-    max-width: 306px;
+    max-width: 305px;
     display: flex;
     z-index: 0;
     position: relative;

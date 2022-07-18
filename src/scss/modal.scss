@@ -4,6 +4,8 @@
   position: fixed;
   right: 0;
   &__cross {
+    position: relative;
+    top: 24px;
     &::before {
       content: url(../img/icons/cross.png);
     }
@@ -22,6 +24,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: auto;
   }
   &__icon {
     &::before {
@@ -50,11 +53,13 @@
   z-index: 2;
 }
 
-
+.form {
+  margin-top: 64px;
+}
 .form__header {
   &::before {
     position: absolute;
-    top: 81px;
+    top: 145px;
     left: 0px;
     border-radius: 0 3px 3px 0;
     content: "";
@@ -84,3 +89,21 @@
   resize: none;
 }
 
+@media (min-width: 1440px) {
+  .form {
+    margin-top: 0;
+    &__header {
+      &::before {
+        position: absolute;
+        top: 39px;
+      }
+    }
+  }
+  .modal {
+    &__cross {
+      position: absolute;
+      left: -72px;
+      top: 39px;
+    }
+  }
+}

@@ -17,17 +17,17 @@
         <nav class="sidenav-header">
           <ul class="sidenav-header__ul">
             <li class="sidenav-header__item">
-              <button class="sidenav-header__button button">
+              <button class="sidenav-header__button" title="Закрыть боковое меню" aria-label="Закрыть боковое меню">
                 <span class="sidenav-header__span sidenav-header__cross"></span>
               </button>
             </li>
             <li class="sidenav-header__item">
-              <a class="sidenav-header__button sidenav-header__logo" href="#">
+              <a class="sidenav-header__button sidenav-header__logo" href="#" title="Переидти на главную страницу сайта">
                 <img src="./img/icons/sidenav/logo.png" alt="logo" />
               </a>
             </li>
             <li class="sidenav-header__item">
-              <button class="sidenav-header__button button">
+              <button class="sidenav-header__button" title="Переидти к поиску по странице" aria-label="Переидти к поиску по странице">
                 <span
                   class="sidenav-header__span sidenav-header__search"
                 ></span>
@@ -39,28 +39,44 @@
         <div class="sidenav-menu">
           <ul class="sidenav-menu__ul">
             <li class="sidenav-menu__li">
-              <a href="#" class="sidenav-menu__link">Ремонт техники</a>
+              <a href="#" class="sidenav-menu__link sidenav-menu__link--active" title="Ремонт техники">
+                Ремонт техники
+              </a>
             </li>
             <li class="sidenav-menu__li">
-              <a href="#" class="sidenav-menu__link">Услуги и сервисы</a>
+              <a href="#" class="sidenav-menu__link" title="Услуги и сервисы">
+                Услуги и сервисы
+              </a>
             </li>
             <li class="sidenav-menu__li">
-              <a href="#" class="sidenav-menu__link">Корпоративным клиентам</a>
+              <a href="#" class="sidenav-menu__link" title="Корпоративным клиентам">
+                Корпоративным клиентам
+              </a>
             </li>
             <li class="sidenav-menu__li">
-              <a href="#" class="sidenav-menu__link">Продавцам техники</a>
+              <a href="#" class="sidenav-menu__link" title="Продавцам техники">
+                Продавцам техники
+              </a>
             </li>
             <li class="sidenav-menu__li">
-              <a href="#" class="sidenav-menu__link">Партнерам</a>
+              <a href="#" class="sidenav-menu__link" title="Партнерам">
+                Партнерам
+              </a>
             </li>
             <li class="sidenav-menu__li">
-              <a href="#" class="sidenav-menu__link">Производителям</a>
+              <a href="#" class="sidenav-menu__link" title="Производителям">
+                Производителям
+              </a>
             </li>
             <li class="sidenav-menu__li">
-              <a href="#" class="sidenav-menu__link">Наши сервисные центры</a>
+              <a href="#" class="sidenav-menu__link" title="Наши сервисные центры">
+                Наши сервисные центры
+              </a>
             </li>
             <li class="sidenav-menu__li">
-              <a href="#" class="sidenav-menu__link">Контакты</a>
+              <a href="#" class="sidenav-menu__link" title="Контакты">
+                Контакты
+              </a>
             </li>
           </ul>
         </div>
@@ -68,17 +84,17 @@
         <div class="sidenav-footer">
           <ul class="sidenav-footer__ul">
             <li class="sidenav-footer__item">
-              <button class="sidenav-footer__button button">
+              <button class="sidenav-footer__button" title="Заказать звонок" aria-label="Заказать звонок">
                 <span class="sidenav-footer__span sidenav-footer__call"></span>
               </button>
             </li>
             <li class="sidenav-footer__item">
-              <button class="sidenav-footer__button button">
+              <button class="sidenav-footer__button" title="Переидти в чат с поддержкой сайта" aria-label="Переидти в чат с поддержкой сайта">
                 <span class="sidenav-footer__span sidenav-footer__chat"></span>
               </button>
             </li>
             <li class="sidenav-footer__item">
-              <button class="sidenav-footer__button button">
+              <button class="sidenav-footer__button" title="Переидти в личный кабинет" aria-label="Переидти в личный кабинет">
                 <span
                   class="sidenav-footer__span sidenav-footer__profile"
                 ></span>
@@ -86,23 +102,29 @@
             </li>
           </ul>
 
-          <button class="email button">mail@cps.com</button>
+          <a href="mailto:mail@cps.com" class="email" title="email для связи с компанией">
+            mail@cps.com
+          </a>
+          <a href="tel:8 800 890 8900" class="phone" title="телефон для связи с компанией">
+            8 800 890 8900
+          </a>
 
-          <button class="phone button">8 800 890 8900</button>
 
           <ul class="sidenav-lang sidenav-lang__ul">
             <li class="sidenav-lang__item sidenav-lang__item--checked">
-              <button
-                class="sidenav-lang__link sidenav-lang__link--checked button"
-              >
+              <a class="sidenav-lang__link sidenav-lang__link--checked" title="Сменить язык страницы на русский" aria-label="Сменить язык страницы на русский">
                 RU
-              </button>
+              </a>
             </li>
             <li class="sidenav-lang__item">
-              <button class="sidenav-lang__link button">EN</button>
+              <a class="sidenav-lang__link" title="Switch the language of the page to english" aria-label="Switch the language of the page to english">
+                EN
+              </a>
             </li>
             <li class="sidenav-lang__item">
-              <button class="sidenav-lang__link button">CH</button>
+              <a class="sidenav-lang__link" title="Switch the language of the page to chinese" aria-label="Switch the language of the page to chinese">
+                CH
+              </a>
             </li>
           </ul>
         </div>
@@ -115,7 +137,7 @@
           <menu class="menu">
             <div class="menu__div menu__div--width-1 menu__div--hidden1120">
               <li class="menu__item">
-                <button class="menu__button button">
+                <button class="menu__button" title="Открыть боковое меню" aria-label="Открыть боковое меню">
                   <img
                     class="menu__img"
                     src="img/icons/header/burger.png"
@@ -125,7 +147,7 @@
               </li>
               <span class="divider1"></span>
               <li class="menu__item">
-                <a class="menu__link menu__logo" href="#">
+                <a class="menu__link menu__f" href="#" title="Переидти на главную страницу сайта">
                   <img
                     class="menu__img"
                     src="img/icons/header/logo.png"
@@ -137,7 +159,7 @@
 
             <div class="menu__div menu__div--width-2 menu__div--hidden">
               <li class="menu__item">
-                <button class="menu__button menu__call">
+                <button class="menu__button menu__call" title="Заказать звонок" aria-label="Заказать звонок">
                   <img
                     class="menu__img"
                     src="img/icons/header/call.png"
@@ -146,16 +168,16 @@
                 </button>
               </li>
               <li class="menu__item">
-                <button class="menu__button menu__feedback">
+                <button class="menu__button menu__feedback" title="Переидти в чат с поддержкой сайта" aria-label="Переидти в чат с поддержкой сайта">
                   <img
                     class="menu__img"
                     src="img/icons/header/chat.png"
-                    alt="feedback"
+                    alt="chat"
                   />
                 </button>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">
+                <a class="menu__link" href="#" title="Переидти в личный кабинет">
                   <img
                     class="menu__img"
                     src="img/icons/header/profile.png"
@@ -168,7 +190,7 @@
             <div class="menu__div menu__div--width-3">
               <span class="divider2"></span>
               <li class="menu__item menu__item--labeled">
-                <a class="menu__link menu__link--labeled--request" href="#">
+                <a class="menu__link menu__link--labeled--request" href="#" title="Оставить заявку для связи">
                   <span class="menu__link-description">Оставить заявку</span>
                   <img
                     class="menu__img"
@@ -178,7 +200,7 @@
                 </a>
               </li>
               <li class="menu__item menu__item--labeled">
-                <a class="menu__link menu__link--labeled--status" href="#">
+                <a class="menu__link menu__link--labeled--status" href="#" title="Узнать статус ремонта">
                   <span class="menu__link-description">Статус ремонта</span>
                   <img
                     class="menu__img"
@@ -201,26 +223,34 @@
           <nav class="navigation">
             <ul class="navigation__ul">
               <li class="navigation__item navigation__item--cheked">
-                <a href="#" class="navigation__link">Ремонтируемые бренды</a>
+                <a href="#" class="navigation__link" title="Ремонтируемые бренды">
+                  Ремонтируемые бренды
+                </a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link"
-                  >Ремонтируемые устройства</a
-                >
+                <a href="#" class="navigation__link" title="Ремонтируемые устройства">
+                  Ремонтируемые устройства
+                </a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">Цены на услуги</a>
+                <a href="#" class="navigation__link" title="Цены на услуги">
+                  Цены на услуги
+                </a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link"
-                  >Адреса сервисных центров</a
-                >
+                <a href="#" class="navigation__link" title="Адреса сервисных центров">
+                  Адреса сервисных центров
+                </a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">Специальные цены</a>
+                <a href="#" class="navigation__link" title="Специальные цены">
+                  Специальные цены
+                </a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">Отзывы</a>
+                <a href="#" class="navigation__link" title="Отзывы">
+                  Отзывы
+                </a>
               </li>
             </ul>
           </nav>
@@ -245,7 +275,9 @@
                   очередь, советуют нас родным и близким.
                 </span>
               </p>
-              <button class="services-text__button button">Читать далее</button>
+              <button class="services-text__button" title="Раскрыть текст полностью" aria-label="Раскрыть текст полностью">
+                Читать далее
+              </button>
             </div>
 
             <div class="services-img__container">
@@ -273,7 +305,7 @@
                     alt="lenovo"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -283,7 +315,7 @@
                     alt="samsung"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -293,7 +325,7 @@
                     alt="apple"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -303,7 +335,7 @@
                     alt="viewsonic"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -313,7 +345,7 @@
                     alt="bosch"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -323,7 +355,7 @@
                     alt="hp"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -333,7 +365,7 @@
                     alt="acer"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -343,7 +375,7 @@
                     alt="sony"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -355,7 +387,7 @@
                     alt="lenovo"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -367,7 +399,7 @@
                     alt="samsung"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -379,7 +411,7 @@
                     alt="apple"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
@@ -389,13 +421,15 @@
                     alt="viewsonic"
                     class="brands-slider__img"
                   />
-                  <a href="#" class="brands-slider__link">
+                  <a href="#" class="brands-slider__link" title="навигационный элемент карточки">
                     <span class="brands-slider__navigation-element"></span>
                   </a>
                 </li>
               </ul>
               <div class="swiper-pagination brands-slider__pagination"></div>
-              <button class="brands-slider__dropdown">Показать все</button>
+              <button class="brands-slider__dropdown" title="Показать все карточки брендов" aria-label="Показать все карточки брендов">
+                Показать все
+              </button>
               </div>
             </div>
           </div>
@@ -411,79 +445,75 @@
               <ul class="tech-slider swiper-wrapper">
                 <li class="tech-slider__card swiper-slide">
                   Ремонт ноутбуков
-                  <a href="#" class="tech-slider__link">
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
                 <li class="tech-slider__card swiper-slide">
                   Ремонт планшетов
-                  <a href="#" class="tech-slider__link">
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
                 <li class="tech-slider__card swiper-slide">
                   Ремонт ПК
-                  <a href="#" class="tech-slider__link">
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
                 <li class="tech-slider__card tech-slider__card--hidden768 swiper-slide">
                   Ремонт  мониторов
-                  <a href="#" class="tech-slider__link">
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
                 <li class="tech-slider__card tech-slider__card--hidden768 tech-slider__card--hidden1120 swiper-slide">
                   Ремонт
-                  <a href="#" class="tech-slider__link">
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
                 <li class="tech-slider__card tech-slider__card--hidden768 tech-slider__card--hidden1120  swiper-slide">
                   Ремонт
-                  <a href="#" class="tech-slider__link">
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
                 <li class="tech-slider__card tech-slider__card--hidden768 tech-slider__card--hidden1120 swiper-slide">
                   Ремонт
-                  <a href="#" class="tech-slider__link">
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
                 <li class="tech-slider__card tech-slider__card--hidden768 tech-slider__card--hidden1120 swiper-slide">
                   Ремонт
-                  <a href="#" class="tech-slider__link">
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
-                <li
-                  class="tech-slider__card tech-slider__card--hidden768 tech-slider__card--hidden1120 swiper-slide"
-                >
+                <li class="tech-slider__card tech-slider__card--hidden768 tech-slider__card--hidden1120 swiper-slide">
                   Ремонт
-                  <a href="#" class="tech-slider__link">
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
-                <li
-                  class="tech-slider__card tech-slider__card--hidden768 tech-slider__card--hidden1120 swiper-slide"
-                >
-                Ремонт
-                  <a href="#" class="tech-slider__link">
+                <li class="tech-slider__card tech-slider__card--hidden768 tech-slider__card--hidden1120 swiper-slide">
+                  Ремонт
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
-                <li
-                  class="tech-slider__card tech-slider__card--hidden768 tech-slider__card--hidden1120 swiper-slide"
-                >
-                Ремонт
-                  <a href="#" class="tech-slider__link">
+                <li class="tech-slider__card tech-slider__card--hidden768 tech-slider__card--hidden1120 swiper-slide">
+                  Ремонт
+                  <a href="#" class="tech-slider__link" title="навигационный элемент технических устройств">
                     <span class="tech-slider__navigation-element"></span>
                   </a>
                 </li>
               </ul>
               <div class="swiper-pagination"></div>
-              <button class="tech-slider__dropdown">Показать все</button>
+              <button class="tech-slider__dropdown" title="Показать все карточки технических устройств" aria-label="Показать все карточки технических устройств">
+                Показать все
+              </button>
               </div>
             </div>
           </div>
@@ -501,7 +531,7 @@
                 <div class="price-card__service"> Диагностика </div>
                 <div class="price-card__price"> Бесплатно </div>
                 <div class="price-card__term"> 30-120 мин </div>
-                <button class="price-card__button">
+                <button class="price-card__button" title="Заказать Диагностику" aria-label="Заказать Диагностику">
                   Заказать
                   <span class="price-card__icon"></span>
                 </button>
@@ -510,7 +540,7 @@
                 <div class="price-card__service"> Замена дисплея </div>
                 <div class="price-card__price"> 1 000 ₽ </div>
                 <div class="price-card__term"> 30-120 мин </div>
-                <button class="price-card__button">
+                <button class="price-card__button" title="Заказать Замену дисплея" aria-label="Заказать Замену дисплея">
                   Заказать
                   <span class="price-card__icon"></span>
                 </button>
@@ -521,7 +551,7 @@
                 </div>
                 <div class="price-card__price"> 1 000 ₽ </div>
                 <div class="price-card__term"> 30-120 мин </div>
-                <button class="price-card__button">
+                <button class="price-card__button" title="Заказать Замену полифонического динамика" aria-label="Заказать Замену полифонического динамика">
                   Заказать
                   <span class="price-card__icon"></span>
                 </button>
@@ -532,7 +562,7 @@
                 </div>
                 <div class="price-card__price"> 1 000 ₽ </div>
                 <div class="price-card__term"> 30-120 мин </div>
-                <button class="price-card__button">
+                <button class="price-card__button" title="Заказать Тестирование с выдачей технического заключения" aria-label="Заказать Тестирование с выдачей технического заключения">
                   Заказать
                   <span class="price-card__icon"></span>
                 </button>
@@ -543,7 +573,7 @@
                 </div>
                 <div class="price-card__price"> 1 000 ₽ </div>
                 <div class="price-card__term"> 30-120 мин </div>
-                <button class="price-card__button">
+                <button class="price-card__button" title="Заказать Замену программного обеспечения" aria-label="Заказать Замену программного обеспечения">
                   Заказать
                   <span class="price-card__icon"></span>
                 </button>
@@ -558,9 +588,9 @@
               единичную услугу. Для получения коммерческого предложения на
               постоянное обслуживание, оставьте заявку.
             </p>
-            <button class="price-descr__navigation-element"
-              >Получить коммерческое предложение</button
-            >
+            <button class="price-descr__navigation-element" aria-label="Получить коммерческое предложение">
+              Получить коммерческое предложение
+            </button>
           </div>
         </div>
       </section>
@@ -584,32 +614,31 @@
     <div class="overlay"></div>
 
     <aside class="modal-call modal">
-      <button class="modal__button">
+      <button class="modal__button" title="Закрыть окно заказа звонка" aria-label="Закрыть окно заказа звонка">
         <span class="modal__cross"></span>
       </button>
       <form action="#" class="form">
         <h2 class="form__header">Заказать звонок</h2>
         <input type="tel" class="form-input" placeholder="Телефон" required />
         <p class="form-agreement">
-          Нажимая “отправить”, вы даете согласие на <a
-            class="form-agreement__link"
-            href="#"
-            >обработку персональных данных</a
-          >
+          Нажимая “отправить”, вы даете согласие на 
+          <a class="form-agreement__link" href="#" title="ссылка на документ об обработке персональных данных">
+            обработку персональных данных
+          </a>
           и соглашаетесь с нашей
-          <a class="form-agreement__link" href="#"
-            >политикой конфиденциальности</a
-          >
+          <a class="form-agreement__link" href="#" title="ссылка на документ о политике конфиденциальности">
+            политикой конфиденциальности
+          </a>
         </p>
       </form>
-      <button class="modal-call__submit modal__submit">
+      <button class="modal-call__submit modal__submit" title="Отправить форму заказа звонка" aria-label="Отправить форму заказа звонка">
         ОТПРАВИТЬ
         <span class="modal-call__icon modal__icon"></span>
       </button>
     </aside>
 
     <aside class="modal-feedback modal">
-      <button class="modal__button">
+      <button class="modal__button" title="Закрыть форму обратной связи" aria-label="Закрыть форму обратной связи">
         <span class="modal__cross"></span>
       </button>
       <form action="#" class="form">
@@ -630,18 +659,17 @@
           required
         ></textarea>
         <p class="form-agreement">
-          Нажимая “отправить”, вы даете согласие на <a
-            class="form-agreement__link"
-            href="#"
-            >обработку персональных данных</a
-          >
+          Нажимая “отправить”, вы даете согласие на 
+          <a class="form-agreement__link" href="#" title="ссылка на документ об обработке персональных данных">
+            обработку персональных данных
+          </a>
           и соглашаетесь с нашей
-          <a class="form-agreement__link" href="#"
-            >политикой конфиденциальности</a
-          >
+          <a class="form-agreement__link" href="#" title="ссылка на документ о политике конфиденциальности">
+            политикой конфиденциальности
+          </a>
         </p>
       </form>
-      <button class="modal-call__submit modal__submit">
+      <button class="modal-call__submit modal__submit" title="Отправить форму обратной связи" aria-label="Отправить форму обратной связи">
         ОТПРАВИТЬ
         <span class="modal-call__icon modal__icon"></span>
       </button>

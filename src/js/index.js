@@ -51,34 +51,51 @@ let modalFeedback = document.querySelector('.modal-feedback')
 let crossModalFeedback = modalFeedback.querySelector('.modal__cross');
 let callSidenavButton = document.querySelector('.sidenav-footer__call')
 let feedbackSidenavButton = document.querySelector('.sidenav-footer__chat')
+let body = document.querySelector('body');
 
 
 callButton.addEventListener('click', function () {
   modalCall.classList.add('modal-call--active');
   overlay.classList.add('overlay--active');
+  body.classList.add('body');
 })
 callSidenavButton.addEventListener('click', function () {
   modalCall.classList.add('modal-call--active');
   overlay.classList.add('overlay--active');
   sidenav.classList.remove('sidenav--active');
+  body.classList.add('body');
 })
 crossFeedbackButton.addEventListener('click', function () {
   modalCall.classList.remove('modal-call--active');
   overlay.classList.remove('overlay--active');
+  body.classList.remove('body');
+})
+overlay.addEventListener('click', function () {
+  modalCall.classList.remove('modal-call--active');
+  overlay.classList.remove('overlay--active');
+  body.classList.remove('body');
 })
 
 feedbackButton.addEventListener('click', function () {
   modalFeedback.classList.add('modal-feedback--active');
   overlay.classList.add('overlay--active');
+  body.classList.add('body');
 })
 feedbackSidenavButton.addEventListener('click', function () {
   modalFeedback.classList.add('modal-feedback--active');
   overlay.classList.add('overlay--active');
   sidenav.classList.remove('sidenav--active');
+  body.classList.add('body');
 })
 crossModalFeedback.addEventListener('click', function () {
   modalFeedback.classList.remove('modal-feedback--active');
   overlay.classList.remove('overlay--active');
+  body.classList.remove('body');
+})
+overlay.addEventListener('click', function () {
+  modalFeedback.classList.remove('modal-feedback--active');
+  overlay.classList.remove('overlay--active');
+  body.classList.remove('body');
 })
 
 // читать далее для 768 и 1120
@@ -198,3 +215,16 @@ buttonTech.addEventListener('click', function () {
   arr.length = 0;
   changeButtonShowMoreTech(buttonTech.innerHTML);
 });
+
+
+// sidenav
+var sidenavLinksContainer = document.getElementsByClassName('sidenav-menu')[0];
+var sidenavLinks = document.getElementsByClassName("sidenav-menu__link");
+
+for (var i = 0; i < sidenavLinks.length; i++) {
+  sidenavLinks[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("sidenav-menu__link--active");
+    current[0].classList.remove("sidenav-menu__link--active")
+    this.classList += " sidenav-menu__link--active";
+  });
+}

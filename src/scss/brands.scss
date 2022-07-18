@@ -69,6 +69,7 @@
   }
   &__pagination {
     position: relative;
+    z-index: 0;
   }
   &__dropdown {
     display: none;
